@@ -20,13 +20,14 @@ module.exports = {
     'max-len': 0,
     'no-prototype-builtins': 0,
     'vue/no-deprecated-slot-attribute': 0,
-    'valid-jsdoc': 0
+    'valid-jsdoc': 0,
+    'vue/multi-word-component-names': 0,
   },
   globals: {
-    wx:true,
-    getCurrentPages:true,
+    wx: true,
+    getCurrentPages: true,
     $ref: true,
     $shallowRef: true,
-    $computed: true
+    $computed: true,
   },
 };

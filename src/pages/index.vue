@@ -24,6 +24,7 @@ const getValuation = async () => {
     it.valuation = 0;
     for (const i of it.funds) {
       const res = await valuation(i.code);
+      if (!res) continue;
       it.valuation = round(it.valuation + res.gszzl / 100 * i.percentage, 2);
     }
   }
