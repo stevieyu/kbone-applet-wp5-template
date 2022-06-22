@@ -1,19 +1,19 @@
 <template>
   <div class="cnt">
-    <Header></Header>
+    <CHeader />
     <button @click="onClickBack">回到上一页</button>
-    <Footer></Footer>
+    <CFooter/>
   </div>
 </template>
 
 <script>
-import Header from '../components/Header.vue';
-import Footer from '../components/Footer.vue';
+import CHeader from '../components/Header.vue';
+import CFooter from '../components/Footer.vue';
 export default {
   name: 'App',
   components: {
-    Header,
-    Footer,
+    CHeader,
+    CFooter,
   },
   methods: {
     onClickBack() {

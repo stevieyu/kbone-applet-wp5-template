@@ -1,25 +1,25 @@
 <template>
   <div class="cnt">
-    <Header />
+    <CHeader />
     <a href="/page2?vvv=1">当前页跳转</a>
     <a href="/page3?ttt=2" target="_blank">新开页面跳转</a>
     <button @click="onClickJump">当前页跳转</button>
     <button @click="onClickOpen">新开页面跳转</button>
-    <Footer />
+    <CFooter />
     <setup-script />
   </div>
 </template>
 
 <script>
-import Header from '../components/Header.vue';
-import Footer from '../components/Footer.vue';
+import CHeader from '../components/Header.vue';
+import CFooter from '../components/Footer.vue';
 import SetupScript from '../components/test/setupScript';
 export default {
   name: 'App',
   components: {
     SetupScript,
-    Header,
-    Footer,
+    CHeader,
+    CFooter,
   },
   methods: {
     onClickJump() {
